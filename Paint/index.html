@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/logo.png" />
+		<title>My Paint</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 tools">
+					<h2> My Paint </h2>
+				Choose your color <input type="color" id='color' class="input-color">
+				<br>
+				Choose your size <input type="range" min="1" max="200" id="size">
+				<p id="test"></p>
+					<button class='erase' id='erase'>Clear</button>
+					<button id="rubber"><img class="rubber" src="img/rubber.png"/></button>
+					<button id="line" ><img class="line" src="img/line.png"  /></button>
+					<button id="pencil"><img class="pencil" src="img/pencil.png"  /></button>
+					<button id="rectangle"><img class="rectangle" src="img/rectangle.png"/></button>
+					<button id="fill_rectangle"><img class="fill_rectangle" src="img/fill_rectangle.png" /></button>
+					<button id="circle"><img class="circle" src="img/circle.png"/></button>
+					<button id="fill_circle"><img class="fill_circle" src="img/fill_circle.png"/></button>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<a
+				href=""
+				onclick="saveImage(this);"
+				download="canvas.png"
+				id="download"
+				>Save as Image</a> 
+				<input class='save' type="file" id="file" />
+				</div>		
+	
+				<div class="col-md-8 canvas">
+					<canvas id="canvas" width="900" height="550"></canvas>
+				</div>
+
+				<div class="col-md-2 canvas">
+				</div>
+			</div>
+		</div>
+
+		<!-- <header>
+		<div class="save">
+			<a
+				href=""
+				onclick="saveImage(this);"
+				download="canvas.png"
+				id="download"
+				>Save as Image</a
+			> 
+			 <input type="file" id="file" />
+		</div>
+	</header> -->
+
+			<!-- <div class="button">
+			Choisis ton model:
+			<button id="cercle">Cercle</button>
+			<button id="remplire">Remplir</button>
+			<button id="rectangle">Rectangle</button>
+			<button id="line">Line</button>
+			<div class="col">
+				Choisis la couleur: <input type="color" id="color" />
+			</div> 
+		</div> -->
+		
+			<!-- <img class="gomme" src="gomme.jpeg" id="gomme" />
+			Entrer l'epaisseur de votre ligne:-->
+			
+			
+		<script src="script.js"></script>
+	</body>
+</html>
